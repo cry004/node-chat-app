@@ -10,3 +10,15 @@ socket.on('disconnect', function() {
 socket.on('newMessage', function(message) {
   console.log('newMessage', message)
 });
+
+socket.emit('createMessage', {
+  from: 'Frank',
+  text: 'Hi'
+}, function(data) {
+  console.log('Got it!', data)
+});
+
+$('#message-form').on('submit', function(e) {
+  e.preventDefault();
+
+});
