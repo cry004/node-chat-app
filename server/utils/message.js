@@ -3,7 +3,7 @@ var generateMessage = (from, text) => {
     from,
     text,
     createdAt: new Date().getTime()
-  }
-}
-
+  };
+};
+var generateLocationMessage = (from, latitude, longitude);
 module.exports = { generateMessage };
